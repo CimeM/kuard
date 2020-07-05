@@ -1,0 +1,60 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-04-23T09:00:46Z"
+  labels:
+    app: bandicoot
+    env: prod
+    ver: "2"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+          f:env: {}
+          f:ver: {}
+      f:spec:
+        f:ports:
+          .: {}
+          k:{"port":8080,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:app: {}
+          f:env: {}
+          f:ver: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-04-23T09:00:46Z"
+  name: bandicoot-prod
+  namespace: default
+  resourceVersion: "77245"
+  selfLink: /api/v1/namespaces/default/services/bandicoot-prod
+  uid: 8e7f2f07-0df7-4017-8c1c-dd92781f94d8
+spec:
+  clusterIP: 10.102.86.11
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: bandicoot
+    env: prod
+    ver: "2"
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

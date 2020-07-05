@@ -1,0 +1,30 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+data:
+  another-param: anothervalue
+  extra-param: extra-value
+  my-config.txt: |
+    this is a test file
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-04-26T10:03:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:another-param: {}
+        f:extra-param: {}
+        f:my-config.txt: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-04-26T10:03:20Z"
+  name: my-config
+  namespace: default
+  resourceVersion: "519748"
+  selfLink: /api/v1/namespaces/default/configmaps/my-config
+  uid: cb098df2-3da9-4fe5-95b0-072b3648224a

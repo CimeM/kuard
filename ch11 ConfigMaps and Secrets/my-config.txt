@@ -1,0 +1,5 @@
+# this is a test file
+parameter1 = value1
+parameter2 = value2
+# to create a ConfigMap use: 
+# kubectl create configmap my-config --from-file=my-config.txt
